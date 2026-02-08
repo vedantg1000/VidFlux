@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #0b0b0b;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right input {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.profile {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    background:
+        linear-gradient(to top, #0b0b0b, transparent),
+        url("https://picsum.photos/1600/900");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.play-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: #e50914;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Cards */
+.section {
+    padding: 100px 40px 40px 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(transparent, black);
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Episodes Page Layout */
+#episodes-container {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Episode Box */
+.episode {
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    padding: 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Hover Effect */
+.episode:hover {
+    background: #e50914;
+    transform: scale(1.07);
+}
