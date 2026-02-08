@@ -1,4 +1,3 @@
-
 const data = {
 
     show1: [
@@ -130,7 +129,6 @@ const data = {
         { title: "Episode 9", link: "" },
         { title: "Episode 10", link: "" }
     ]
-
 };
 
 function openShow(show) {
@@ -138,14 +136,22 @@ function openShow(show) {
     window.location.href = "episodes.html";
 }
 
+
 if (window.location.pathname.includes("episodes.html")) {
     const show = localStorage.getItem("show");
     const container = document.getElementById("episodes-container");
+
     data[show].forEach(ep => {
         const div = document.createElement("div");
         div.className = "episode";
         div.innerText = ep.title;
-        div.onclick = () => window.location.href = ep.link;
+        div.onclick = () => {
+            const id = ep.link.split("/d/")[1].split("/")[0];
+            localStorage.setItem("videoId", id);
+            window.location.href = "player.html";
+        };
+
         container.appendChild(div);
     });
+
 }
