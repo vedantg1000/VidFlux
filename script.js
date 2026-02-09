@@ -104,30 +104,20 @@ const data = {
         { title: "Episode 10", link: "" }
     ],
 
-    show9: [
-        { title: "Episode 1", link: "" },
-        { title: "Episode 2", link: "" },
-        { title: "Episode 3", link: "" },
-        { title: "Episode 4", link: "" },
-        { title: "Episode 5", link: "" },
-        { title: "Episode 6", link: "" },
-        { title: "Episode 7", link: "" },
-        { title: "Episode 8", link: "" },
-        { title: "Episode 9", link: "" },
-        { title: "Episode 10", link: "" }
+        show9: [
+        { title: "Watch Movie", link: "https://drive.google.com/file/d/1vrmslmuuqOGu3gq7XQUamCPD4C8XTrny/view?usp=drive_link" }
     ],
-
-    show10: [
-        { title: "Episode 1", link: "" },
-        { title: "Episode 2", link: "" },
-        { title: "Episode 3", link: "" },
-        { title: "Episode 4", link: "" },
-        { title: "Episode 5", link: "" },
-        { title: "Episode 6", link: "" },
-        { title: "Episode 7", link: "" },
-        { title: "Episode 8", link: "" },
-        { title: "Episode 9", link: "" },
-        { title: "Episode 10", link: "" }
+        show10: [
+        { title: "Watch Movie", link: "https://drive.google.com/file/d/1CMrzoZwnGRKLAsuYs_zVy-YDEVf6-fOg/view?usp=drive_link" }
+    ],
+        show11: [
+        { title: "Watch Movie", link: "https://drive.google.com/file/d/1ttccGE1DJ6iZ0LxkALYfl-ntnsfyNFM_/view?usp=drive_link" }
+    ],
+        show12: [
+        { title: "Watch Movie", link: "https://drive.google.com/file/d/14znqcy3ZHm-vIunWqZzW37rCZTRiQpWT/view?usp=drive_link" }
+    ],
+        show13: [
+        { title: "Watch Movie", link: "https://drive.google.com/file/d/1gTCsUO5Bq5lsrLE-JUlbbPF3BjutyhSv/view?usp=drive_link" }
     ]
 };
 
