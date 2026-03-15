@@ -1,3 +1,24 @@
+const cursor = document.createElement("div");
+cursor.classList.add("cursor");
+document.body.appendChild(cursor);
+
+document.addEventListener("mousemove", (e) => {
+
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+
+    const sparkle = document.createElement("div");
+    sparkle.classList.add("sparkle");
+
+    sparkle.style.left = e.clientX + "px";
+    sparkle.style.top = e.clientY + "px";
+
+    document.body.appendChild(sparkle);
+
+    setTimeout(() => {
+        sparkle.remove();
+    }, 800);
+});
 const data = {
 
     show1: [
