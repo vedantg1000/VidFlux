@@ -5,9 +5,65 @@
     font-family: Arial;
 }
 
+/* Disable default cursor */
 body {
     background: #0b0b0b;
     color: white;
+    cursor: none;
+}
+
+/* Main glowing cursor (reddish white) */
+.cursor {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+
+    background: radial-gradient(circle,
+        rgba(255,255,255,1) 0%,
+        rgba(255,120,120,0.9) 40%,
+        rgba(229,9,20,0.7) 70%,
+        transparent 90%
+    );
+
+    box-shadow:
+        0 0 8px white,
+        0 0 15px rgba(255,120,120,0.9),
+        0 0 25px #e50914;
+
+    transform: translate(-50%, -50%);
+}
+
+/* Sparkle particles (white twinkling) */
+.sparkle {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+
+    background: white;
+
+    box-shadow:
+        0 0 6px white,
+        0 0 10px rgba(255,255,255,0.9),
+        0 0 16px rgba(255,180,180,0.7);
+
+    animation: twinkle 0.8s linear forwards;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
 }
 
 /* Navbar */
@@ -44,7 +100,6 @@ body {
 
 .profile {
     border-radius: 50%;
-    cursor: pointer;
 }
 
 /* Hero */
@@ -74,7 +129,6 @@ body {
     border-radius: 30px;
     background: #e50914;
     color: white;
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -82,41 +136,92 @@ body {
     transform: scale(1.1);
 }
 
-/* Cards */
+/* Section */
 .section {
     padding: 100px 40px 40px 40px;
 }
 
 .cards {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
+/* Card */
 .card {
     position: relative;
-    width: 250px;
-    cursor: pointer;
+    width: 265px;
+    overflow: hidden;
+    border-radius: 12px;
     transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
+    transition: transform 0.5s;
+}
+
+/* Glossy reflection */
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.04),
+        rgba(255,255,255,0.01),
+        rgba(255,255,255,0.04)
+    );
+    opacity: 0;
+    transition: 0.4s;
+}
+
+/* Shine animation */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.2),
+        transparent
+    );
+    transition: 0.6s;
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
+    box-shadow: 0 15px 40px rgba(229,9,20,0.5);
 }
 
+.card:hover img {
+    transform: scale(1.12);
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.card:hover::before {
+    left: 120%;
+}
+
+/* Text overlay */
 .card-overlay {
     position: absolute;
     bottom: 0;
-    background: linear-gradient(transparent, black);
     width: 100%;
     padding: 20px;
-    border-radius: 10px;
+    background: linear-gradient(transparent, black);
 }
+
 /* Episodes */
 .section-title {
     padding-top: 100px;
@@ -135,10 +240,11 @@ body {
     background: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
-    cursor: pointer;
     text-align: center;
+    transition: 0.3s;
 }
 
 .episode:hover {
     background: #e50914;
+    transform: scale(1.05);
 }
