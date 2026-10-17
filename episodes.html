@@ -1,27 +1,61 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-    <title>Episodes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090b10">
+    <title>VedantFlix — Your next favorite</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
-    <div class="cursor-glow"></div>
-    
-    <nav class="navbar">
-        <div class="logo">VedantFlix</div>
+    <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="VedantFlix home">Vedant<span>Flix</span></a>
+        <div class="nav-right">
+            <div class="search-wrap" id="search-wrap">
+                <label class="search-box" for="movie-search">
+                    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+                    <input id="movie-search" type="search" placeholder="Search movies" aria-label="Search movies and series" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="search-results" aria-expanded="false">
+                </label>
+                <div class="search-results" id="search-results" role="listbox" aria-label="Movie search results" hidden></div>
+            </div>
+        </div>
     </nav>
 
-    <h2 class="section-title">Episodes</h2>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-kicker"><span class="live-dot"></span> YOUR PERSONAL SCREENING ROOM</div>
+                <h1><span>Contents worth</span><span class="hero-highlight">staying in for</span></h1>
+                <p>Find your next favorite in a collection of unforgettable series and movies</p>
+                <div class="hero-actions">
+                    <a class="play-btn" href="#collection"><span aria-hidden="true">▶</span> Explore collection</a>
+                </div>
+            </div>
+            <div class="hero-carousel" id="hero-carousel" role="group" aria-label="Movie cover spotlight">
+                <button class="carousel-cover" id="carousel-cover" type="button" aria-label="Open featured movie">
+                    <img id="carousel-image" class="is-active" src="" alt="">
+                    <img id="carousel-image-next" src="" alt="" aria-hidden="true">
+                    <div class="carousel-cover-shade"></div>
+                    <div class="carousel-caption"><span>MOVIE SPOTLIGHT</span><strong id="carousel-title"></strong></div>
+                </button>
+                <div class="carousel-controls">
+                    <button class="carousel-arrow" id="carousel-prev" type="button" aria-label="Previous movie">‹</button>
+                    <div class="carousel-dots" id="carousel-dots" aria-label="Choose a movie cover"></div>
+                    <button class="carousel-arrow" id="carousel-next" type="button" aria-label="Next movie">›</button>
+                </div>
+            </div>
+            <span class="hero-orb" aria-hidden="true"></span>
+        </section>
 
-    <div id="episodes-container"></div>
-
+        <section class="section" aria-labelledby="collection-title">
+            <div class="section-heading" id="collection">
+                <div><span class="section-eyebrow">PICK YOUR NEXT WATCH</span><h2 id="collection-title">Explore the collection</h2></div>
+                <span class="title-count" aria-live="polite"></span>
+            </div>
+            <div class="cards" id="movie-cards" aria-live="polite"></div>
+            <p class="search-empty" id="search-empty" role="status" hidden>No titles match your search. Try another title.</p>
+        </section>
+    </main>
     <script src="script.js"></script>
-
 </body>
-
 </html>
