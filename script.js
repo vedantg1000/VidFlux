@@ -15,7 +15,26 @@ const titles = [
     ["Another Simple Favor (2025) (Hindi - English)", "https://resizing.flixster.com/rYw-sAhxctliSFnplZGFvxvFiMg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzVmZTRiYmQxLTA3MWEtNDY4ZC1hMTViLWYwYmRiZjM1OWI4MS5qcGc="],
     ["Cocktail 2 (2026)", "https://mediafiles.cineplex.com/Central/Film/Posters/61569_768_1024.jpg"],
     ["Wonderful Nightmare (2025) (Hindi - English)", "https://m.media-amazon.com/images/M/MV5BM2Y5MmE0MGEtZjg2OS00MjQ3LTk5MTMtZWM0NDIxYjA1ZmE0XkEyXkFqcGc%40._V1_.jpg"],
-    ["Karate Kid Legends (2025) (Hindi - English)", "https://image.tmdb.org/t/p/original/ke2azC8aj5WbB7t6v3EbBJSqBPt.jpg"]
+    ["Karate Kid Legends (2025) (Hindi - English)", "https://image.tmdb.org/t/p/original/ke2azC8aj5WbB7t6v3EbBJSqBPt.jpg"],
+    ["People We Meet on Vacation (2026) (Hindi - English)", "https://image.tmdb.org/t/p/original/8FnuMhzCu4xJCFJap8xS5RYwUbW.jpg"],
+    ["Soulm8te (2026) (English)", "https://image.tmdb.org/t/p/original/bNErActDctl6cdUGw9pnjSCmyhQ.jpg"],
+    ["The Other Zoey (2023) (Hindi - English)", "https://www.dvd-trailers.gr/photos/media/the_other_zoey_2023_205963.jpg"],
+    ["Fall For Me (2025) (Hindi - English - German)", "https://cdn.kinocheck.com/i/x72nnkyzzv.jpg"],
+    ["Regretting You (2025) (Hindi - English)", "https://icicine.com/media/1126/01K2YGR5F5SG3KXHMCB7MT0RQQ.jpg"],
+    ["Game of Love (2022) (Hindi - English)", "https://images.justwatch.com/poster/307063146/s718/time-is-up-2.jpg"],
+    ["The Transporter Refueled (2015) (Hindi - English)", "https://i0.wp.com/fontlot.com/wp-content/uploads/2023/01/1-10.jpg"],
+    ["Bad Girl (2025)", "https://static.moviecrow.com/gallery/20250903/250744-bad%20girl3.jpeg"],
+    ["Killer Whale (2026) (English)", "https://m.media-amazon.com/images/S/pv-target-images/9e7eb3a74928671ae5b97af3fe8b9ad2b6b0cec0bd4210ec46abedb8428e3400.jpg"],
+    ["Love Me Love Me (2026) (Hindi - English)", "https://images2.cinefil.com/movies/1279886.webp"],
+    ["Laal Ishq (2016) (Marathi)", "https://cdn1.marathistars.com/wp-content/uploads/2016/04/Laal-Ishq-Movie-Poster-Swapnil-Joshi-Anjana-Sukhani.jpg"],
+    ["The Love Hypothesis (2026) (Hindi - English)", "https://myimg.click/images/2026/09/24/The-Love-Hypothesis-2026.jpg"],
+    ["Saiyaara (2025) (Hindi)", "https://media5.bollywoodhungama.in/wp-content/uploads/2025/04/Saiyaara-1-1.jpg"],
+    ["The Bayou (2025) (Hindi - English)", "https://m.media-amazon.com/images/M/MV5BOGQ5MGVmOWYtN2Y0NS00MWM5LWI1MjItNTI5NDdkNmRiMzkzXkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg"],
+    ["Season of Love AKA Ask Mevsimi (2024) (Hindi - English)", "https://www.paribucineverse.com/files/movie_posters/HO00006234_638392988257363665_ask-mevsimi.png"],
+    ["Summer of 69 (2025) (English)", "https://images.justwatch.com/poster/331473072/s718/summer-of-69.jpg"],
+    ["Space Wars Quest For The Deepstar (2022) (English)", "https://images.justwatch.com/poster/305065611/s718/space-wars-quest-for-the-deepstar-2023.jpg"],
+    ["Love Sex and 30 Candles (2023) (English)", "https://image.tmdb.org/t/p/original/rpMQRqKoDq81m5czp5ZKMOG8NrE.jpg"],
+    ["Gharat Ganpati (2024) (Marathi)", "https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/gharat-ganpati-et00399543-1727683042.jpg"]
 ];
 
 const links = [
@@ -27,7 +46,16 @@ const links = [
     "1Gc7_u0GD8WcY04uz5m4NXhevVE2DxTA9", "1TLUgoz0Dg3SO4a-VVBpp1ZueUyyZJIOW",
     "1zfmC-Ku-BR5reY4vg1ebltB3vnC8XtYZ", "13Ts5RqXK8GtmQajMl4ni_30egOCyv79w",
     "1krF1qivwOg8rCDBSjEqDB7-g5F1iH8sM", "1r0TvXGnklNIALdNOuiV2IqmTjHNEheD0",
-    "1-Wahj_QF5DeA67frgyozagAv_jdAF17M"
+    "1-Wahj_QF5DeA67frgyozagAv_jdAF17M", "https://drive.google.com/file/d/16yZ83BYJjhl9x8pLzNVDp3i2vT9YJM1k/view?usp=sharing",
+    "https://drive.google.com/file/d/1Bn6vvF26ECUW6VfpWUGUXEBbg3jXcjQn/view?usp=sharing", "https://drive.google.com/file/d/1xC_eGsKK1-wvYMBSkGX7Z7XtxIGKIRE7/view?usp=sharing",
+    "https://drive.google.com/file/d/1zUsr7qV0Qgm7j7PwzWJS6dfOHnCoRLlL/view?usp=sharing", "https://drive.google.com/file/d/18rTlyaA72fk19zp07gsoyyqWFVe4CYaa/view?usp=sharing",
+    "https://drive.google.com/file/d/1uSsSRLZ2p24k-xRy3SMXfvSJ_3H-UE8B/view?usp=sharing", "https://drive.google.com/file/d/1pYU-GdwQXLn4fZ6VZiPn-_ws7p91Ceyy/view?usp=sharing",
+    "https://drive.google.com/file/d/1LOBu5ttLJPozLip4QyErS3DB9IBVadB0/view?usp=sharing", "https://drive.google.com/file/d/1BWmDZOL7nLoaF4c8ycMcQsH37qtAC-oT/view?usp=sharing",
+    "https://drive.google.com/file/d/1Uj_qv0JN9cLS92_jymwqUoR0o9TaGQ3R/view?usp=sharing", "https://drive.google.com/file/d/1b0H8lLbGGHaPrnnN6hPEv8T5C5Qk0don/view?usp=sharing",
+    "https://drive.google.com/file/d/1pd5DS5hURSinfw4el_khCW3N-OUom2qL/view?usp=sharing", "https://drive.google.com/file/d/1C-MBxprLhDXWw6e__swDkyweoSWK0Hzo/view?usp=sharing", 
+    "https://drive.google.com/file/d/17ZGYCSwLwPAUbcvlX7nqU5sGvJ6u9zXL/view?usp=sharing", "https://drive.google.com/file/d/1lGqdw1MaADmnP5onpC04fLA7WpnYtJAa/view?usp=sharing",
+    "https://drive.google.com/file/d/1k3E5jx1TPZMXgfF_UD_e3CVv_IazJXOw/view?usp=sharing", "https://drive.google.com/file/d/1LuycM1rN8KeFon1X7SzgyZB8KBDUnQRI/view?usp=sharing",
+    "https://drive.google.com/file/d/1WQ_OqyNKFDTZVqSM_dHn5dnoDdivEk9z/view?usp=sharing","https://drive.google.com/file/d/1F5wEl3cJM0c3mVscBsqlV8zfTqDYZC7F/view?usp=sharing"
 ];
 
 function normalizeDriveId(value) {
@@ -275,36 +303,101 @@ if (episodes) {
     const [title, poster] = titles[showIndex] ?? [];
     const selected = data[show]?.[0];
     if (selected) {
-        document.getElementById("selected-title").textContent = title;
-        document.title = `${title} — VedantFlix`;
+        const language = title.match(/\((Hindi|English|German)(?:\s*-\s*(?:Hindi|English|German))*\)$/i)?.[0]?.slice(1, -1).replace(/\s*-\s*/g, " · ");
+        const displayTitle = title.replace(/\s+\(\d{4}\)/, "").replace(/\s+\((?:Hindi|English|German)(?:\s*-\s*(?:Hindi|English|German))*\)$/i, "");
+        document.getElementById("selected-title").textContent = displayTitle;
+        document.title = `${displayTitle} — VedantFlix`;
         const posterImage = document.getElementById("detail-poster");
         const fallback = document.getElementById("detail-poster-fallback");
+        const backdrop = document.getElementById("detail-backdrop");
+        const year = title.match(/\((\d{4})\)/)?.[1];
+        const meta = document.getElementById("detail-meta");
+        meta.replaceChildren();
+        ["FEATURE FILM", year || "VEDANTFLIX", language || "VEDANTFLIX"].forEach((label, index) => {
+            if (index) {
+                const divider = document.createElement("i");
+                meta.append(divider);
+            }
+            const item = document.createElement("span");
+            item.textContent = label;
+            meta.append(item);
+        });
         const showFallback = () => {
             posterImage.hidden = true;
             fallback.hidden = false;
-            fallback.textContent = title.split(" ").slice(0, 2).map(word => word[0]).join("");
-            document.getElementById("detail-backdrop").classList.add("no-poster");
+            fallback.textContent = displayTitle.split(" ").slice(0, 2).map(word => word[0]).join("");
+            backdrop.classList.add("no-poster");
         };
         if (poster) {
             posterImage.src = poster;
-            document.getElementById("detail-backdrop").style.backgroundImage = `url("${poster}")`;
+            backdrop.style.backgroundImage = `url("${poster}")`;
             posterImage.addEventListener("error", showFallback, { once: true });
         } else showFallback();
 
-        const button = document.createElement("button");
-        button.className = "episode";
-        button.type = "button";
-        button.innerHTML = `<span class="episode-copy"><strong>${selected.title}</strong><small>Play from the beginning</small></span><span class="episode-play" aria-hidden="true">▶</span>`;
-        button.addEventListener("click", () => {
+        document.getElementById("detail-play").addEventListener("click", () => {
             localStorage.setItem("videoId", normalizeDriveId(links[showIndex]));
             window.location.href = "player.html";
         });
-        episodes.append(button);
+
+        const recommendations = titles.map((movie, index) => ({ movie, index })).reverse().filter(item => item.index !== showIndex);
+        recommendations.forEach(({ movie: [movieTitle, moviePoster], index }) => {
+            const card = document.createElement("button");
+            card.className = "trend-card";
+            card.type = "button";
+            card.dataset.show = `show${index + 1}`;
+            card.setAttribute("aria-label", `Open ${movieTitle}`);
+            if (moviePoster) {
+                const image = document.createElement("img");
+                image.src = moviePoster;
+                image.alt = `${movieTitle} poster`;
+                image.loading = "lazy";
+                image.addEventListener("error", () => image.remove(), { once: true });
+                card.append(image);
+            }
+            const shade = document.createElement("span");
+            shade.className = "trend-card-shade";
+            const caption = document.createElement("span");
+            caption.className = "trend-card-title";
+            caption.textContent = movieTitle.replace(/\s+\(\d{4}\)/, "").replace(/\s+\((?:Hindi|English|German)(?:\s*-\s*(?:Hindi|English|German))*\)$/i, "");
+            card.append(shade, caption);
+            episodes.append(card);
+        });
+        episodes.addEventListener("click", event => {
+            const card = event.target.closest("[data-show]");
+            if (card) openShow(card.dataset.show);
+        });
     } else {
         document.getElementById("selected-title").textContent = "Your next watch is waiting";
         document.getElementById("detail-poster").hidden = true;
         document.getElementById("detail-poster-fallback").hidden = false;
         document.getElementById("detail-poster-fallback").textContent = "VF";
-        episodes.innerHTML = '<a class="episode episode-link" href="index.html"><span class="episode-number">↗</span><span class="episode-copy"><strong>Browse the collection</strong><small>Pick a film to get started</small></span><span class="episode-play" aria-hidden="true">→</span></a>';
+        document.getElementById("detail-play").hidden = true;
+        document.getElementById("detail-meta").hidden = true;
+        titles.slice().reverse().forEach(([movieTitle, moviePoster], reverseIndex) => {
+            const index = titles.length - reverseIndex - 1;
+            const card = document.createElement("button");
+            card.className = "trend-card";
+            card.type = "button";
+            card.dataset.show = `show${index + 1}`;
+            card.setAttribute("aria-label", `Open ${movieTitle}`);
+            if (moviePoster) {
+                const image = document.createElement("img");
+                image.src = moviePoster;
+                image.alt = `${movieTitle} poster`;
+                image.loading = "lazy";
+                card.append(image);
+            }
+            const shade = document.createElement("span");
+            shade.className = "trend-card-shade";
+            const caption = document.createElement("span");
+            caption.className = "trend-card-title";
+            caption.textContent = movieTitle.replace(/\s+\(\d{4}\)/, "").replace(/\s+\((?:Hindi|English|German)(?:\s*-\s*(?:Hindi|English|German))*\)$/i, "");
+            card.append(shade, caption);
+            episodes.append(card);
+        });
+        episodes.addEventListener("click", event => {
+            const card = event.target.closest("[data-show]");
+            if (card) openShow(card.dataset.show);
+        });
     }
 }
