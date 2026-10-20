@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090b10">
+    <title>Now showing — VedantFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+    <nav class="navbar subpage-nav" aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="VedantFlix home">Vedant<span>Flix</span></a>
+        <a class="nav-collection" href="index.html">Browse collection <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <main>
+        <section class="detail-hero" id="detail-hero">
+            <div class="detail-backdrop" id="detail-backdrop" aria-hidden="true"></div>
+            <div class="detail-content">
+                <a class="text-back" href="index.html">← <span>Back to collection</span></a>
+                <div class="detail-kicker"><span class="live-dot"></span> NOW STREAMING</div>
+                <h1 id="selected-title">Choose a title</h1>
+                <p class="detail-description">Settle in and enjoy your pick from the VedantFlix collection.</p>
+                <div class="detail-meta" id="detail-meta"><span>FEATURE FILM</span><i></i><span>VEDANTFLIX</span></div>
+                <div class="detail-actions">
+                    <button class="play-btn" id="detail-play" type="button"><span aria-hidden="true">▶</span> Play movie</button>
+                    <a class="detail-more" href="#more-to-watch">More to explore <span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+            <div class="detail-poster-wrap"><img id="detail-poster" alt="" class="detail-poster"><span id="detail-poster-fallback" class="poster-fallback" hidden></span></div>
+        </section>
+
+        <section class="watch-section" id="more-to-watch" aria-labelledby="watch-heading">
+            <div class="watch-heading">
+                <div><span class="section-eyebrow">FIND YOUR NEXT FAVORITE</span><h2 id="watch-heading">Trending now</h2></div>
+                <span class="shelf-hint">Scroll to explore <span aria-hidden="true">→</span></span>
+            </div>
+            <div id="episodes-container" class="trending-row" aria-label="More movies in the collection"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
